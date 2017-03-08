@@ -1,0 +1,15 @@
+#
+# Mapping Class: Measurement
+#
+
+#collectTask:
+#    - metricId: database.mysql.system
+#      neId: mysql_127.0.0.1
+#      granularity: 60
+#      properties: {"ip":"127.0.0.1", "port":"3309", "username":"root","password":"U_tywg_2013"}
+#      tags: {"host":"127.0.0.1"}
+#    - metricId: database.mysql.db
+#      neId: mysql_127.0.0.1
+#      granularity: 60
+#      properties: {"ip":"127.0.0.1", "port":"3309", "username":"root","password":"U_tywg_2013"}
+#      tags: {"host":"127.0.0.1"}

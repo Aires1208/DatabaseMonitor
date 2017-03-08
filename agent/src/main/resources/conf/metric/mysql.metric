@@ -1,0 +1,25 @@
+#
+# Mapping Class: NeModel
+#
+neTypeId: database.mysql
+metrics:
+    - metricName: database.mysql.system
+      metricId: database.mysql.system
+      granularity: 60
+      status: 0
+    - metricName: database.mysql.db
+      metricId: database.mysql.db
+      granularity: 60
+    - metricName: database.mysql.generallog
+      metricId: database.mysql.generallog
+      granularity: 60
+      status: 0
+    - metricName: database.mysql.session
+      metricId: database.mysql.session
+      granularity: 60
+    - metricName: database.mysql.slowlog
+      metricId: database.mysql.slowlog
+      granularity: 60
+    - metricName: database.mysql.users
+      metricId: database.mysql.users
+      granularity: 60

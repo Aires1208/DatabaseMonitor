@@ -1,0 +1,10 @@
+disable 'RegisterInfo'
+disable 'OSInfo'
+disable 'MonitorInfo'
+
+
+drop 'RegisterInfo'
+drop 'OSInfo'
+drop 'MonitorInfo'
+
+exit

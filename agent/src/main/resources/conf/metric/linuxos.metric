@@ -1,0 +1,23 @@
+#
+# Mapping Class: NeModel
+#
+neTypeId: os.linux
+metrics:
+#    - metricName: os.linux.network
+#      metricId: os.linux.network
+#      granularity: 60
+#    - metricName: os.linux.disk
+#      metricId: os.linux.disk
+#      granularity: 60
+    - metricName: os.linux.cpu
+      metricId: os.linux.cpu
+      granularity: 60
+    - metricName: os.linux.ram
+      metricId: os.linux.ram
+      granularity: 60
+    - metricName: os.linux.mysqldisk
+      metricId: os.linux.mysqldisk
+      granularity: 60
+    - metricName: os.linux.mysqlnetwork
+      metricId: os.linux.mysqlnetwork
+      granularity: 60

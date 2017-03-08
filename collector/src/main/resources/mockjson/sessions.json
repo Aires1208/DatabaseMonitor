@@ -1,0 +1,14 @@
+﻿{
+  "sessionTopN": [
+    {
+      "sessionId": "11111",
+      "timeSpent": 9,
+      "weight": "90"
+    },
+    {
+      "sessionId": "22222",
+      "timeSpent": 1,
+      "weight": "10"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+flush 'RegisterInfo'
+flush 'OSInfo'
+flush 'MonitorInfo'
+
+exit

@@ -1,0 +1,5 @@
+create 'RegisterInfo', { NAME => 'inputInfo'}
+create 'OSInfo', { NAME => 'os'}
+create 'MonitorInfo', { NAME => 'mysql', }
+list
+exit

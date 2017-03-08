@@ -1,0 +1,5 @@
+disable 'RegisterInfo'
+
+drop 'RegisterInfo'
+
+exit

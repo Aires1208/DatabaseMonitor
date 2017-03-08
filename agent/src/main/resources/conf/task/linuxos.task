@@ -1,0 +1,20 @@
+#
+# Mapping Class: Measurement
+#
+
+#collectTask:
+#    - metricId: os.linux.cpu
+#      neId: linux_1
+#      granularity: 60
+#      properties: {"ip":"10.62.96.76", "port":"22", "username":"root", "password":"ossdbg1","protocol":"SSH"}
+#      tags: {"host":"10.62.96.76"}
+#    - metricId: os.linux.ram
+#      neId: linux_1
+#      granularity: 60
+#      properties: {"ip":"10.62.96.76", "port":"22", "username":"root", "password":"ossdbg1","protocol":"SSH"}
+#      tags: {"host":"10.62.96.76"}
+#    - metricId: os.linux.network
+#      neId: linux_1
+#      granularity: 60
+#      properties: {"ip":"10.62.96.76", "port":"22", "username":"root", "password":"ossdbg1","protocol":"SSH"}
+#      tags: {"host":"10.62.96.76"}

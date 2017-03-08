@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+
+    Copyright (C) 2015 ZTE, Inc. and others. All rights reserved. (ZTE)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+            http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<monitor-map i18n-file="">
+    <monitor metricId="os.linux.cpu" accept="string number" command="sh /usr/wg/linux_cpu.sh">
+        <!--<perfcounter name="PROCNUM" value="processcnt">-->
+            <!--<parse line="5" token="2" name="processcnt"/>-->
+        <!--</perfcounter>-->
+        <!--<perfcounter name="CPUBUSYRATIO" value="100-idle">-->
+            <!--<parse line="4" token="2" name="idle"/>-->
+        <!--</perfcounter>-->
+        <!--<perfcounter name="CPUIDLERATIO" value="idle">-->
+            <!--<parse line="4" token="2" name="idle"/>-->
+        <!--</perfcounter>-->
+        <perfcounter name="CPUSYSRATIO" value="system">
+            <parse line="2" token="2" name="system"/>
+        </perfcounter>
+        <perfcounter name="CPUUSERRATIO" value="user">
+            <parse line="1" token="2" name="user"/>
+        </perfcounter>
+        <perfcounter name="CPUWAITRATIO" value="iowait">
+            <parse line="3" token="2" name="iowait"/>
+        </perfcounter>
+    </monitor>
+
+    <monitor metricId="os.linux.ram" accept="string number" command="sh /usr/wg/linux_memory.sh">
+        <perfcounter name="USEDMEMRATIO" value="usedmemratio">
+            <parse line="1" token="2" name="usedmemratio"/>
+        </perfcounter>
+        <!--<perfcounter name="TOTALSWAP" value="totalswap">-->
+            <!--<parse line="11" token="2" name="totalswap"/>-->
+        <!--</perfcounter>-->
+        <!--<perfcounter name="SWAPUSEDRATIO" value="usedswapratio">-->
+            <!--<parse line="12" token="2" name="usedswapratio"/>-->
+        <!--</perfcounter>-->
+    </monitor>
+
+    <monitor metricId="os.linux.mysqldisk" accept="string number" command="sh /usr/wg/linux-mysql-disk.sh">
+        <perfcounter name="DISKREADBYTES"  value="readpersec" >
+            <parse line="1" token="2" name="readpersec"/>
+        </perfcounter>
+        <perfcounter name="DISKWRITEBYTES" value="writepersec" >
+            <parse line="2" token="2" name="writepersec"/>
+        </perfcounter>
+    </monitor>
+
+    <monitor metricId="os.linux.mysqlnetwork" accept="string number" command="sh /usr/wg/linux-mysql-network.sh">
+        <perfcounter name="MYSQLINTRANSRATE"  value="intransrate" >
+            <parse line="1" token="2" name="intransrate"/>
+        </perfcounter>
+        <perfcounter name="MYSQLOUTTRANSRATE" value="outtransrate" >
+            <parse line="2" token="2" name="outtransrate"/>
+        </perfcounter>
+    </monitor>
+
+    <!--<monitor metricId="os.linux.disk" accept="string number number number number number+" command="sh /usr/wg/linux_disk.sh">-->
+        <!--<perfcounter name="DISKBUSYRATIO" iflist="true" specialProcess="LinuxFilterDisk" value="diskbusy">-->
+            <!--<parse line="1" token="14" name="diskbusy"/>-->
+        <!--</perfcounter>-->
+        <!--<perfcounter name="DISKREADBYTES" iflist="true" specialProcess="LinuxFilterDisk" value="readpersecond/2.0">-->
+            <!--<parse line="1" token="6" name="readpersecond"/>-->
+        <!--</perfcounter>-->
+        <!--<perfcounter name="DISKWRITEBYTES" iflist="true" specialProcess="LinuxFilterDisk" value="writepersecond/2.0">-->
+            <!--<parse line="1" token="7" name="writepersecond"/>-->
+        <!--</perfcounter>-->
+        <!--<perfcounter name="DISKID" ifstring="true" iflist="true" specialProcess="LinuxFilterDisk" value="diskid">-->
+            <!--<parse line="1" token="1" name="diskid" />-->
+        <!--</perfcounter>-->
+    <!--</monitor>-->
+
+    <!--<monitor metricId="os.linux.network" accept="string number string+" command="sh /usr/wg/linux_netif.sh">-->
+        <!--<perfcounter name="INTERFACENAME"  iflist="true" ifstring="true" specialProcess="deleteLoopBackNetworkInterface" value="interfacename" >-->
+            <!--<parse line="1" token="1" name="interfacename"/>-->
+        <!--</perfcounter>-->
+        <!--<perfcounter name="TELNETINPACKET" iflist="true" specialProcess="deleteLoopBackNetworkInterface" value="telnetinerror+telnetinok" >-->
+            <!--<parse line="1" token="3" name="telnetinok"/>-->
+            <!--<parse line="1" token="4" name="telnetinerror"/>-->
+        <!--</perfcounter>-->
+        <!--<perfcounter name="TELNETOUTPACKET" iflist="true" specialProcess="deleteLoopBackNetworkInterface" value="telnetouterror+telnetoutok" >-->
+            <!--<parse line="1" token="11" name="telnetoutok"/>-->
+            <!--<parse line="1" token="12" name="telnetouterror"/>-->
+        <!--</perfcounter>-->
+        <!--<perfcounter name="TELNETINERROR" iflist="true" specialProcess="deleteLoopBackNetworkInterface" value="telnetinerror" >-->
+            <!--<parse line="1" token="4" name="telnetinerror"/>-->
+        <!--</perfcounter>-->
+        <!--<perfcounter name="TELNETOUTERROR" iflist="true" specialProcess="deleteLoopBackNetworkInterface" value="telnetouterror" >-->
+            <!--<parse line="1" token="12" name="telnetouterror"/>-->
+        <!--</perfcounter>-->
+        <!--<perfcounter name="TELNETINBYTE" iflist="true" specialProcess="deleteLoopBackNetworkInterface" value="telnetinbyte" >-->
+            <!--<parse line="1" token="2" name="telnetinbyte"/>-->
+        <!--</perfcounter>-->
+        <!--<perfcounter name="TELNETOUTBYTE" iflist="true" specialProcess="deleteLoopBackNetworkInterface" value="telnetoutbyte" >-->
+            <!--<parse line="1" token="10" name="telnetoutbyte"/>-->
+        <!--</perfcounter>-->
+        <!--<perfcounter name="TELNETSPEED" iflist="true" specialProcess="deleteLoopBackNetworkInterface" value="telnetspeed" >-->
+            <!--<parse line="1" token="18" name="telnetspeed"/>-->
+        <!--</perfcounter>-->
+    <!--</monitor>-->
+</monitor-map>

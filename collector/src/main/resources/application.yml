@@ -1,0 +1,18 @@
+server:
+    port: 8081
+    contextPath:
+
+spring:
+    profiles:
+        active: dev
+
+    thymeleaf:
+        cache: false
+
+# LOGGING
+logging:
+    file: logs/dbmonitor-collector.log
+    pattern:
+        file: "%d{yyyy-MM-dd HH:mm:ss SSS} [%thread] %-5level %logger{36} - %msg%n"
+    level:
+        com.zte.ums.oespaas.mysql: INFO

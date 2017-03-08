@@ -1,0 +1,3 @@
+create 'RegisterInfo', { NAME => 'inputInfo'}
+list
+exit

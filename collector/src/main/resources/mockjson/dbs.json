@@ -1,0 +1,28 @@
+﻿{
+  "dbs": [
+    {
+      "dbName": "oracle",
+      "dbHost": "10.92.250.187:3306",
+      "neId": "5beaa136-48d6...",
+      "collectTime": "2016-10-05 10:01:06",
+      "status": "ON",
+      "type": "Oracle",
+      "health": "true",
+      "queries": "2.3k",
+      "timeSpent": "00:21:32",
+      "cpu": "30%"
+    },
+    {
+      "dbName": "mysql",
+      "dbHost": "10.92.250.187:3306",
+      "neId": "c9e09646-62ea...",
+      "collectTime": "2016-10-06 10:01:06",
+      "status": "OFF",
+      "type": "MySQL",
+      "health": "true",
+      "queries": "2.1k",
+      "timeSpent": "01:21:32",
+      "cpu": "23%"
+    }
+  ]
+}

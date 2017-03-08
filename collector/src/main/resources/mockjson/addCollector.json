@@ -1,0 +1,13 @@
+﻿{
+  "dbName": "mySqlTest",
+  "url": "127.0.0.1",
+  "dbType": "MYSQL",
+  "dbUsername": "root",
+  "dbPassword": "root",
+  "dbPort": "3306",
+  "dbSID": "",
+  "connectType": "SSH",
+  "hostPort": "21",
+  "hostUsername": "root",
+  "hostPassword": "root"
+}
